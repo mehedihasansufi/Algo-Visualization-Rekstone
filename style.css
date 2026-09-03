@@ -1,0 +1,85 @@
+:root{
+    --header-color: #F5F5F7E6;
+    --primary-color:#C8960C;
+    --secondary-text-color: #666666;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+ header{
+    background-color: var(--header-color);
+    padding: 1rem 0.2rem;
+    border-bottom:1px solid #D1D1D6E6;
+ }
+
+ nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+ }
+ .logo-section{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+ }
+ .logo{
+    font-size: 1.2rem;
+    font-weight: 800;
+    background-color: var(--primary-color);
+    padding: .5rem;
+    border-radius: 25%;
+ }
+ .logo-section span{
+    font-size: 1.3rem;
+    font-weight: 700;
+ }
+ .navbar-action ul{
+    display: flex;
+    gap: .1rem;
+    align-items: center;
+    margin-right: 1.5rem;
+ }
+ .navbar-action ul a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--secondary-text-color);
+ }
+
+ #home{
+    background-color: rgba(200, 150, 12, 10%);
+    padding: .5rem 1rem;
+    border-radius: 15%;
+    color: var(--primary-color);
+    margin-right: .3rem;
+ }
+ .navbar-action-design{
+    padding: 0.5rem 1rem;
+    border-radius: 15%;
+ }
+  .navbar-action-design:hover{
+     background-color:rgba(209, 209, 214, 25%);
+  }
+
+  #dark{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    border: 1px solid #D1D1D6E6;
+    padding: .5rem 1rem;
+    border-radius: 15%;
+    
+  }
+  #dark svg {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+#dark:hover{
+background-color: rgba(200, 150, 12, 10%);
+color: var(--primary-color);
+border: 1px solid var(--primary-color);
+}
