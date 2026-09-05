@@ -2,16 +2,23 @@
    --main-font: 'Space Grotesk', sans-serif;
     --header-color: #F5F5F7E6;
     --primary-color:#C8960C;
-    --primary-background-color:rgba(200, 150, 12, 8%);
+    --primary-background-color:rgba(200, 150, 12, 0.08);
     --secondary-text-color: #666666;
     --white-background-color:#FFFFFF;
     --black-color:#000000;
     --bottom-border:#D1D1D6E6;
 }
+
+
+.space-grotesk{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  
+}
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
 
 svg{
@@ -27,6 +34,10 @@ a{
     background-color: var(--header-color);
     padding: .8rem 0.2rem;
     border-bottom:1px solid var(--bottom-border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
  }
 
  nav{
@@ -121,18 +132,15 @@ border: 1px solid var(--primary-color);
 
 .hero-section{
    width: 100%;
-   height: 90vh;
+   height: 97vh;
    display: flex;
    justify-content: center;
    border-bottom: 1px solid var(--bottom-border);
-   position: absolute;
 }
  .hero-container{
-    border: 1px solid red;
    width: 80%;
    display: flex;
    justify-content: center;
-   margin-top: 2rem;
    font-family: var(--main-font);
 }
 
@@ -142,13 +150,12 @@ border: 1px solid var(--primary-color);
 }
 
 .hero-container ul li{
- 
    display: inline-flex;
    justify-content: center;
    gap: .7rem;
    font-size: 1rem;
    color: var(--primary-color);
-   padding: .2rem 1.9rem;
+   padding: .8rem 1.9rem;
    border-radius: 15px;
    background-color: var(--primary-background-color);
    border: 1px solid #C8960C;
@@ -159,23 +166,40 @@ border: 1px solid var(--primary-color);
    font-size: 1.6rem;
    width: 60%;
    margin-top: 5rem;
+   padding-top: 5rem;
+}
+.shadow{
+   height: 350px;
+   width: 500px;
+   border-radius: 100%;
+   position: absolute;
+   left: 34%;
+   top: 30%;
+   background-color: var(--primary-background-color);
+   pointer-events: none;
+   filter: blur(80px);
 }
 .hero-main{
-   border: 1px solid black;
-   margin-top: 2rem;
+   margin-top: 1.5rem;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   gap: 1.5rem;
+   gap: 1.9rem;
 }
-.hero-main h1{
-    font-weight: 600;
+.hero-details{
+   display: flex;
+   flex-direction: column;
+   gap: .8rem;
+}
+.hero-main .hero-details h1{
+   font-size: 3.5rem;
+    font-weight: 800;
     text-align: center;
 }
 .hero-main span{
    color: var(--primary-color);
 }
-.hero-main p{
+.hero-main .hero-details p{
    font-size: 1.3rem;
    width: 80%;
    margin: auto;
@@ -224,6 +248,34 @@ border: 1px solid var(--primary-color);
    border: 1px solid var(--primary-color);
    color: var(--primary-color);
 }
+
+/* hero features */
+
+.hero-feature{
+   display: flex;
+   width: 50%;
+   margin: 1.5rem auto;
+   justify-content: space-around;
+   
+}
+
+.problem,.language ,.stat-badge{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: var(--secondary-text-color);
+   font-size: .9rem;
+   font-weight: 800;
+}
+
+.stat-count ,.stat-number ,.stat-language{
+   color: var(--primary-color);
+   font-size: 1.5rem;
+   font-weight: 800;
+}
+
+
+
 
 /* for mobile device */
 
@@ -291,5 +343,61 @@ border: 1px solid var(--primary-color);
   .overlay-menu ul li a{
    color: var(--black-color);
   }
-   
+
+  /* hero section  */
+  .hero-container{
+   margin-top: 0;
+   width: 90%;
+  }
+  .hero-container ul li{
+   font-size: .8rem;
+  }
+   .hero-contain{
+      width: 100%;
+      margin-top: 2rem;
+     
+   }
+   .hero-main .hero-details h1{
+      font-size: 2.2rem;
+   }
+   .shadow{
+      height: 200px;
+      width: 300px;
+      background-color: var(--primary-background-color);
+      border-radius: 100%;
+      position: absolute;
+      top: 35%;
+      left: 15%;
+      filter: blur(25px);
+   }
+   .hero-main .hero-details p{
+      width: 90%;
+      font-size: 1.1rem;
+      
+   }
+   .btn-group{
+      flex-direction: column;
+   }
+   .btn{
+      padding: 1rem 1.5rem;
+      margin: auto;
+      font-weight: 700;
+   }
+.primary-btn{
+
+   width: 60%;
+}
+   .secondary-btn{
+      width: 40%;
+      margin-top: .5rem;
+   }
+
+   .hero-feature{
+      width: 70%;
+      margin-top: 1rem;
+   }
+
+   .problem,.language ,.stat-badge{
+      font-size: .7rem;
+   }
 }
