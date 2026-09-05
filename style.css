@@ -1,19 +1,32 @@
 :root{
+   --main-font: 'Space Grotesk', sans-serif;
     --header-color: #F5F5F7E6;
     --primary-color:#C8960C;
     --primary-background-color:rgba(200, 150, 12, 8%);
     --secondary-text-color: #666666;
     --white-background-color:#FFFFFF;
     --black-color:#000000;
+    --bottom-border:#D1D1D6E6;
 }
 *{
     padding: 0;
     margin: 0;
+    
 }
+
+svg{
+   width: 1rem;
+   height: 1rem;
+   flex-shrink: 0;
+}
+a{
+   text-decoration: none;
+}
+
  header{
     background-color: var(--header-color);
     padding: .8rem 0.2rem;
-    border-bottom:1px solid #D1D1D6E6;
+    border-bottom:1px solid var(--bottom-border);
  }
 
  nav{
@@ -47,7 +60,10 @@
     align-items: center;
     margin-right: 1.5rem;
  }
- .navbar-action ul a{
+ .navbar-action li{
+   list-style-type: none;
+ }
+ .navbar-action ul li a{
     text-decoration: none;
     font-size: 1rem;
     font-weight: 800;
@@ -79,12 +95,6 @@
    cursor: pointer;
   }
 
-#dark svg {
-  width: 1rem;
-  height: 1rem;
-  flex-shrink: 0;
-}
-
 #dark:hover{
 background-color: rgba(200, 150, 12, 10%);
 color: var(--primary-color);
@@ -99,17 +109,122 @@ border: 1px solid var(--primary-color);
    padding: .3rem .5rem;
    cursor: pointer;
 }
-#hambergur-icon svg{
-   width:1rem;
-   height: 1rem;
-   flex-shrink: 0;
-}
 
 
 /* main */
 .overlay-menu{
    display: none;
 }
+
+
+/* hero section */
+
+.hero-section{
+   width: 100%;
+   height: 90vh;
+   display: flex;
+   justify-content: center;
+   border-bottom: 1px solid var(--bottom-border);
+   position: absolute;
+}
+ .hero-container{
+    border: 1px solid red;
+   width: 80%;
+   display: flex;
+   justify-content: center;
+   margin-top: 2rem;
+   font-family: var(--main-font);
+}
+
+.hero-container ul {
+   text-align: center;
+   list-style-position: inside;
+}
+
+.hero-container ul li{
+ 
+   display: inline-flex;
+   justify-content: center;
+   gap: .7rem;
+   font-size: 1rem;
+   color: var(--primary-color);
+   padding: .2rem 1.9rem;
+   border-radius: 15px;
+   background-color: var(--primary-background-color);
+   border: 1px solid #C8960C;
+}
+
+/* hero contain */
+.hero-contain{
+   font-size: 1.6rem;
+   width: 60%;
+   margin-top: 5rem;
+}
+.hero-main{
+   border: 1px solid black;
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1.5rem;
+}
+.hero-main h1{
+    font-weight: 600;
+    text-align: center;
+}
+.hero-main span{
+   color: var(--primary-color);
+}
+.hero-main p{
+   font-size: 1.3rem;
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   line-height: 1.8;
+   color: var(--secondary-text-color);
+   
+}
+.btn-group{
+   display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+.btn{
+   padding: 1rem 2.9rem;
+   font-size: .9rem;
+   border-radius: 10px;
+   color:var(--black-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+.primary-btn{
+   background-color: var(--primary-color);
+   border:1px solid var(--primary-color);
+   font-weight:  550;
+   display: flex;
+   align-items: center;
+   gap: .3rem;
+}
+.primary-btn span{
+   display: inline-flex;
+}
+.primary-btn span svg{
+   color: black;
+}
+.secondary-btn{
+   font-weight: 550;
+   border:1px solid var(--bottom-border);
+   background-color: white;
+   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.secondary-btn:hover{
+   border: 1px solid var(--primary-color);
+   color: var(--primary-color);
+}
+
 /* for mobile device */
 
 @media(max-width:480px){
@@ -163,15 +278,18 @@ border: 1px solid var(--primary-color);
    padding: .3rem .8rem;
    
   }
-  .overlay-menu ul a{
+  .overlay-menu ul li{
    text-decoration: none;
    font-size: 1.2rem;
    font-weight: 400;
    padding: 1rem 0rem 1rem 1rem;
-   color: var(--black-color);
+   list-style-type: none;
    background-color: var(--primary-background-color);
    border-radius: 10px;
-   color: var(--primary-color);
+   color: var(--primary-color); /* when i use the active class */
+  }
+  .overlay-menu ul li a{
+   color: var(--black-color);
   }
    
 }

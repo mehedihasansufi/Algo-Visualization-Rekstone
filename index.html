@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algo-vis</title>
+    <!-- google font here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..800&display=swap" rel="stylesheet">
+    <!-- css link here -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
 
             <div class="logo-section">
-             <div class="logo">AV</div>
-             <span>Algorithm Visualizer</span>
+                <div class="logo">AV</div>
+                <span>Algorithm Visualizer</span>
             </div>
 
 
             <div class="navbar-action">
                 <ul>
-                    <a id="home" href="">Home</a>
-                    <a class="navbar-action-design" href="">Problems</a>
-                    <a class="navbar-action-design" href="">Article</a>
-                    <a class="navbar-action-design" href="">About</a>
-                    <a   id="dark" href=""> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-</svg>
- Dark</a>
-                   <a id="hambergur-icon" href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-</svg>
-</a> 
+                    <li><a id="home" href="">Home</a></li>
+                    <li><a class="navbar-action-design" href="">Problems</a></li>
+                    <li><a class="navbar-action-design" href="">Article</a></li>
+                    <li><a class="navbar-action-design" href="">About</a></li>
+                    <li><a id="dark" href=""> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                            </svg>
+                            Dark</a></li>
+                    <li> <a id="hambergur-icon" href=""><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                            </svg>
+                        </a> </li>
                 </ul>
-                
+
             </div>
         </nav>
 
-        
+
     </header>
+
+
     <main>
         <div class="overlay-menu">
             <ul>
-            <a href="">Home</a>
-            <a href="">Problems</a>
-            <a href="">Article</a>
-            <a href="">Menu</a>
+                <li><a href="">Home</a></li>
+                <li><a href="">Problems</a></li>
+                <li><a href="">Article</a></li>
+                <li> <a href="">Menu</a></li>
             </ul>
-            
+
         </div>
+
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-contain">
+                    <ul>
+                        <li><span>●</span>Free · No sign-up required</li>
+                    </ul>
+
+
+                    <div class="hero-main">
+                        <h1>Master Algorithms <span>Visually</span></h1>
+                        <p>Step-by-step animated visualizations for LeetCode problems and classic algorithms. Built for
+                            coding interviews and CS learners.</p>
+                        <div class="btn-group">
+                            <button class="primary-btn btn">Browse All Problems <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+</svg>
+</span></button>
+                            <button class="secondary-btn btn">Try Two Sum</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="./index.js"></script>
 </body>
+
 </html>
