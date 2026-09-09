@@ -142,7 +142,7 @@ body {
 .primary-btn span{
    display: inline-flex;
 }
-.primary-btn span svg{
+.primary-btn span svg,.primary-btn a{
    color: black;
 }
 .secondary-btn{
