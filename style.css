@@ -9,13 +9,8 @@
 .space-grotesk{
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
-  
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 svg{
    width: 1rem;

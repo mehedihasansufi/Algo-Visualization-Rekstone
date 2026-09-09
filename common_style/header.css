@@ -9,7 +9,11 @@
     --bottom-border:#D1D1D6E6;
     
 }
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
  header{
     background-color: var(--header-color);
     padding: .8rem 0.2rem;

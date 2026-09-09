@@ -1,0 +1,54 @@
+.space-grotesk{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.hero-section{
+    width: 80%;
+    margin: 7rem auto 0rem auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.hero-container{
+    width: 90%;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 1.8rem;
+}
+.hero-contain{
+    display: flex;
+    flex-direction: column;
+    gap: 3.9rem;
+    
+   
+}
+
+.hero-title, .hero-problem{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.hero-section h1{
+    font-size: 2.5rem;
+    font-weight: 550;
+    text-align: center;
+}
+
+.hero-section .hero-contain .hero-title p{
+    color: var( --secondary-text-color);
+    text-align: center;
+    
+}
+
+.hero-problem h1{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+
+.hero-problem p{
+    text-align: center;
+    color: var(--secondary-text-color);
+    font-size: 1.3rem;
+}
