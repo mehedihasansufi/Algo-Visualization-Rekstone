@@ -135,7 +135,7 @@ border: 1px solid var(--primary-color);
    height: 97vh;
    display: flex;
    justify-content: center;
-   border-bottom: 1px solid var(--bottom-border);
+   border-bottom:1px solid var(--bottom-border);
 }
  .hero-container{
    width: 80%;
@@ -346,7 +346,7 @@ border: 1px solid var(--primary-color);
 
   /* hero section  */
   .hero-section{
-   height: 85  vh; 
+   height: 85vh; 
 }
   .hero-container{
    margin-top: 0;
