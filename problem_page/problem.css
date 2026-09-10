@@ -52,3 +52,51 @@
     color: var(--secondary-text-color);
     font-size: 1.3rem;
 }
+
+.problem-search-section{
+    display: flex;
+    width: 50%;
+    margin: 2rem auto 0rem auto;
+   gap: 1.8rem;
+   align-content: center;
+}
+.problem-search-section input{
+     width: 70%;
+     padding: 0rem .9rem;
+     font-size: 1rem;
+     color: var(--secondary-text-color);
+     border-radius: 8px;
+     border: 1px solid var(--bottom-border);
+     background-color: #ffffff;
+     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+     
+}
+
+input:focus{
+    border:2px solid var(--primary-color) ;
+    outline: none;
+}
+
+.grid-list{
+    display: flex;
+    align-items: center;
+   gap: 1rem;
+    color: var(--secondary-text-color);
+     border-radius: 8px;
+     border: 1px solid var(--bottom-border);
+     background-color: #ffffff;
+     box-shadow: 0 0px 2px rgba(0,0,0,0.1);
+     padding: .3rem .3rem;
+}
+.grid-list p{
+     padding: .7rem .7rem;
+     font-size: .9rem;
+     text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+.grid{
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
