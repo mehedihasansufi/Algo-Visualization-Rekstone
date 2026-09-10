@@ -3,6 +3,9 @@
   font-optical-sizing: auto;
 }
 
+.user-select-none{
+     user-select: none;
+}
 .hero-section{
     width: 80%;
     margin: 7rem auto 0rem auto;
@@ -95,8 +98,10 @@ input:focus{
     color: black;
     font-weight: 700;
     cursor: pointer;
+   
 }
-.grid{
+.grid-list-active{
     background-color: var(--primary-color);
     border-radius: 8px;
+    
 }

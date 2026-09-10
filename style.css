@@ -220,7 +220,6 @@ body {
    background-color: var( --easy-problem-background-color);/* খুব হালকা সবুজ ব্যাকগ্রাউন্ড */
    color: var(--easy-problem-text-color);
    border: 1px solid var(--easy-problem-text-color);
-    
 }
 
 .medium{

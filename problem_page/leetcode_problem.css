@@ -1,0 +1,61 @@
+:root{
+   --easy-problem-background-color:#d1fae5;
+    --easy-problem-text-color:#065f46;
+    --medium-problem--background-color:#fef3c7;
+    --medium-problem-text-color:#d97706;
+    --hard-problem-background-color:#fee2e2;
+    --hard-problem-text-color:#dc2626;
+}
+.card{
+    background-color: #ffffff;
+    border:1px solid var(--bottom-border);
+    border-radius:10px ;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+.card .btn{
+   padding: .3rem .7rem;
+   border-radius: 6px;
+   font-size: .8rem;
+   font-weight: 700;
+}
+.easy{
+   background-color: var( --easy-problem-background-color);
+   color: var(--easy-problem-text-color);
+   border: 0.5px solid var(--easy-problem-text-color);
+}
+
+.container {
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: 2.8rem auto 0rem auto;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.problem-name-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.problem-name{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+#problem-number{
+    background-color: var( --primary-color);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.problem-details{
+    color: var( --secondary-text-color);
+    margin-top: .9rem;
+}
