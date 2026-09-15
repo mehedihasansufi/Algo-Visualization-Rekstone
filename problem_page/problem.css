@@ -1,107 +1,134 @@
-.space-grotesk{
+.space-grotesk {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
 }
 
-.user-select-none{
-     user-select: none;
+.user-select-none {
+  user-select: none;
 }
-.hero-section{
+.hero-section {
+  width: 80%;
+  margin: 7rem auto 0rem auto;
+  display: flex;
+  justify-content: center;
+}
+.hero-container {
+  width: 90%;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 1.8rem;
+}
+.hero-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 3.9rem;
+}
+
+.hero-title,
+.hero-problem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 550;
+  text-align: center;
+}
+
+.hero-section .hero-contain .hero-title p {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.hero-problem h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 550;
+}
+
+.hero-problem p {
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-size: 1.3rem;
+}
+
+.problem-search-section {
+  display: flex;
+  width: 50%;
+  margin: 2rem auto 0rem auto;
+  gap: 1.8rem;
+  align-content: center;
+}
+.problem-search-section input {
+  width: 70%;
+  padding: 0rem 0.9rem;
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+  border-radius: 8px;
+  border: 1px solid var(--bottom-border);
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+input:focus {
+  border: 2px solid var(--primary-color);
+  outline: none;
+}
+
+.grid-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--secondary-text-color);
+  border-radius: 8px;
+  border: 1px solid var(--bottom-border);
+  background-color: #ffffff;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+  padding: 0.3rem 0.3rem;
+}
+.grid-list p {
+  padding: 0.7rem 0.7rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+.grid-list-active {
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    margin: 6rem auto 0rem auto;
+  }
+  .hero-contain {
+    gap: 2.5rem;
+  }
+  .hero-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-problem p {
+    font-size: 1rem;
+  }
+  .grid-list{
+    display: none;
+  }
+.problem-search-section {
     width: 80%;
-    margin: 7rem auto 0rem auto;
-    display: flex;
-    justify-content: center;
-    
+    margin: 1.5rem auto 0rem auto;
 }
-.hero-container{
+  .problem-search-section input{
     width: 90%;
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 1.8rem;
-}
-.hero-contain{
-    display: flex;
-    flex-direction: column;
-    gap: 3.9rem;
-    
-   
-}
-
-.hero-title, .hero-problem{
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-}
-
-.hero-section h1{
-    font-size: 2.5rem;
-    font-weight: 550;
-    text-align: center;
-}
-
-.hero-section .hero-contain .hero-title p{
-    color: var( --secondary-text-color);
-    text-align: center;
-    
-}
-
-.hero-problem h1{
-    color: var(--primary-color);
-    font-size: 2.5rem;
-    font-weight: 550;
-}
-
-.hero-problem p{
-    text-align: center;
-    color: var(--secondary-text-color);
-    font-size: 1.3rem;
-}
-
-.problem-search-section{
-    display: flex;
-    width: 50%;
-    margin: 2rem auto 0rem auto;
-   gap: 1.8rem;
-   align-content: center;
-}
-.problem-search-section input{
-     width: 70%;
-     padding: 0rem .9rem;
-     font-size: 1rem;
-     color: var(--secondary-text-color);
-     border-radius: 8px;
-     border: 1px solid var(--bottom-border);
-     background-color: #ffffff;
-     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-     
-}
-
-input:focus{
-    border:2px solid var(--primary-color) ;
-    outline: none;
-}
-
-.grid-list{
-    display: flex;
-    align-items: center;
-   gap: 1rem;
-    color: var(--secondary-text-color);
-     border-radius: 8px;
-     border: 1px solid var(--bottom-border);
-     background-color: #ffffff;
-     box-shadow: 0 0px 2px rgba(0,0,0,0.1);
-     padding: .3rem .3rem;
-}
-.grid-list p{
-     padding: .7rem .7rem;
-     font-size: .9rem;
-     text-transform: capitalize;
-    color: black;
-    font-weight: 700;
-    cursor: pointer;
-   
-}
-.grid-list-active{
-    background-color: var(--primary-color);
-    border-radius: 8px;
-    
+    margin: auto;
+    padding: 1rem 0.9rem;
+  }
+  .grid-leetcode-problem-list{
+    width: 95%;
+    margin: auto;
+  }
 }
