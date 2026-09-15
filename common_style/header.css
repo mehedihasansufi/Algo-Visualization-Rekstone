@@ -89,7 +89,7 @@ svg{
     display: flex;
     align-items: center;
     gap: .3rem;
-    border: 1px solid #D1D1D6E6;
+    border: 1px solid var(--bottom-border);
     padding: .5rem 1rem;
     border-radius: 15%;
    cursor: pointer;

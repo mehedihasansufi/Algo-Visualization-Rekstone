@@ -60,24 +60,38 @@
   margin-top: 0.9rem;
   font-size: 0.9rem;
 }
+.btn-group {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  user-select: none;
+}
 
 .btn-visual {
   padding: 0.6rem;
   margin: auto;
   font-weight: 700;
   background-color: var(--primary-color);
-  margin-top: 1.5rem;
   border-radius: 8px;
   text-align: center;
+  cursor: pointer;
+  width: 100%;
 }
 
 .btn-leetcode {
   padding: 0.6rem;
   margin: auto;
+  border: 1px solid var(--bottom-border);
   font-weight: 700;
-  margin-top: 1.5rem;
   border-radius: 8px;
   text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.btn-leetcode:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 @media (max-width: 480px) {
   .container {
@@ -93,5 +107,11 @@
   .problem-name {
     gap: 0.5rem;
     font-weight: 550;
+  }
+
+  .btn-group {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
   }
 }

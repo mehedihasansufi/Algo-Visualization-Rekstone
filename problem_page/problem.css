@@ -13,7 +13,7 @@
   justify-content: center;
 }
 .hero-container {
-  width: 90%;
+  width: 95%;
   border-bottom: 3px solid var(--primary-color);
   padding-bottom: 1.8rem;
 }
@@ -123,7 +123,7 @@ input:focus {
     margin: 1.5rem auto 0rem auto;
 }
   .problem-search-section input{
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 1rem 0.9rem;
   }
