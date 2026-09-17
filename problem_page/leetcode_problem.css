@@ -24,6 +24,19 @@
   color: var(--easy-problem-text-color);
   border: 0.5px solid var(--easy-problem-text-color);
 }
+.medium{
+   background-color: var( --medium-problem--background-color);
+   color: var( --medium-problem-text-color);
+   border: 1px solid var(--medium-problem-text-color);
+   
+}
+
+.hard{
+   background-color: var(--hard-problem-background-color);
+   color: var(--hard-problem-text-color);
+   border: 1px solid var(--hard-problem-text-color);
+
+}
 
 .container {
   width: 80%;
@@ -33,6 +46,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
 .problem-name-container {
@@ -53,8 +67,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 850;
 }
-
+#problem-name{
+  font-weight: 800;
+}
 .problem-details {
   color: var(--secondary-text-color);
   margin-top: 0.9rem;
