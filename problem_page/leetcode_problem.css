@@ -12,6 +12,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .card .btn,
 .list-card .btn {
@@ -44,7 +47,7 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
 
@@ -107,11 +110,15 @@
   cursor: pointer;
   width: 100%;
 }
-.btn-leetcode,#list-leetcode:hover {
+.btn-leetcode:hover,#list-leetcode:hover {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
 }
-
+.list-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
 .list-card {
   width: 100%;
   background-color: #ffffff;
