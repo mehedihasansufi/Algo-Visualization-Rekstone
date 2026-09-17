@@ -13,15 +13,3 @@ fetch('./leetcode_problem.html')
     document.getElementsByClassName("grid-leetcode-problem-list")[0].innerHTML=data;
     fetchLeetCodeProblems();
 })
-const grid =document.getElementById('grid');
-const list=document.getElementById('list');
-
-grid.addEventListener('click',()=>{
-    grid.classList.add("grid-list-active")
-    list.classList.remove('grid-list-active')
-})
-
-list.addEventListener('click',()=>{
-    list.classList.add("grid-list-active");
-    grid.classList.remove('grid-list-active')
-})

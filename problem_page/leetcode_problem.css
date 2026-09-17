@@ -13,7 +13,8 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
-.card .btn {
+.card .btn,
+.list-card .btn {
   padding: 0.3rem 0.7rem;
   border-radius: 6px;
   font-size: 0.8rem;
@@ -24,18 +25,16 @@
   color: var(--easy-problem-text-color);
   border: 0.5px solid var(--easy-problem-text-color);
 }
-.medium{
-   background-color: var( --medium-problem--background-color);
-   color: var( --medium-problem-text-color);
-   border: 1px solid var(--medium-problem-text-color);
-   
+.medium {
+  background-color: var(--medium-problem--background-color);
+  color: var(--medium-problem-text-color);
+  border: 1px solid var(--medium-problem-text-color);
 }
 
-.hard{
-   background-color: var(--hard-problem-background-color);
-   color: var(--hard-problem-text-color);
-   border: 1px solid var(--hard-problem-text-color);
-
+.hard {
+  background-color: var(--hard-problem-background-color);
+  color: var(--hard-problem-text-color);
+  border: 1px solid var(--hard-problem-text-color);
 }
 
 .container {
@@ -59,7 +58,8 @@
   align-items: center;
   gap: 1.2rem;
 }
-#problem-number {
+#problem-number,
+#list-problem-number {
   background-color: var(--primary-color);
   height: 30px;
   width: 30px;
@@ -69,7 +69,8 @@
   align-items: center;
   font-weight: 850;
 }
-#problem-name{
+#problem-name,
+#list-problem-name {
   font-weight: 800;
 }
 .problem-details {
@@ -85,7 +86,7 @@
   user-select: none;
 }
 
-.btn-visual {
+.btn-visual,#list-visual {
   padding: 0.6rem;
   margin: auto;
   font-weight: 700;
@@ -96,7 +97,7 @@
   width: 100%;
 }
 
-.btn-leetcode {
+.btn-leetcode,#list-leetcode {
   padding: 0.6rem;
   margin: auto;
   border: 1px solid var(--bottom-border);
@@ -106,9 +107,44 @@
   cursor: pointer;
   width: 100%;
 }
-.btn-leetcode:hover {
+.btn-leetcode,#list-leetcode:hover {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+.list-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid var(--bottom-border);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  justify-content: space-between;
+}
+.list-card,
+.list-problem-name,
+.list-problem-details,
+.list-button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+#problem-details {
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+}
+
+#list-visual{
+  padding: 0.6rem 2.3rem;
+  border: 1px solid var(--primary-color);
+}
+
+#list-leetcode{
+  padding: 0.6rem 2.3rem;
+  background-color: white;
+}
+.list-active-taggle {
+  display: none;
 }
 @media (max-width: 480px) {
   .container {
