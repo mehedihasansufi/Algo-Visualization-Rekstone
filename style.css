@@ -33,7 +33,7 @@ body {
    height: auto;
    display: flex;
    justify-content: center;
-   padding-bottom: 1rem;
+   padding-bottom: 4rem;
    border-bottom:1px solid var(--bottom-border);
 }
  .hero-container{

@@ -108,6 +108,7 @@ border: 1px solid var(--primary-color);
    display: none;  
    padding: .3rem .5rem;
    cursor: pointer;
+    color: var(--secondary-text-color);
 }
 
 @media (max-width: 480px) {
