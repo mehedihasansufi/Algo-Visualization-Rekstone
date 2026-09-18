@@ -125,10 +125,10 @@ body {
 .primary-btn{
    background-color: var(--primary-color);
    border:1px solid var(--primary-color);
-   font-weight:  550;
+   font-weight:  800;
    display: flex;
    align-items: center;
-   gap: .3rem;
+   gap: .5rem;
 }
 .primary-btn span{
    display: inline-flex;
